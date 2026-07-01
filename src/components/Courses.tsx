@@ -68,7 +68,7 @@ export default function Courses({ onOpenEnroll }: { onOpenEnroll: (courseTitle: 
           </p>
         </div>
 
-        <div style={{ display: 'grid', gap: '40px' }}>
+        <div className="mobile-carousel" style={{ display: 'grid', gap: '40px' }}>
           {courses.map((course, idx) => (
             <div key={idx} className="glass-card course-card">
               {/* Course Image */}

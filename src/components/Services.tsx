@@ -64,7 +64,7 @@ export default function Services({ onOpenBooking }: { onOpenBooking: (serviceNam
         </div>
 
         {/* 3 Cards Grid */}
-        <div className="grid-3">
+        <div className="grid-3 mobile-carousel">
           {services.map((srv, idx) => (
             <div
               key={idx}

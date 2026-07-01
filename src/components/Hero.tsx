@@ -29,6 +29,8 @@ export default function Hero({
             padding: '56px 48px',
             position: 'relative',
             overflow: 'hidden',
+            width: '100%',
+            maxWidth: '100%',
             boxShadow: '0 20px 45px rgba(110, 50, 180, 0.1)',
             border: '2px solid rgba(255, 255, 255, 0.85)',
           }}
@@ -46,37 +48,38 @@ export default function Hero({
               borderRadius: '40% 60% 70% 30% / 40% 50% 60% 50%',
               opacity: 0.7,
               zIndex: 0,
+              pointerEvents: 'none',
             }}
           />
 
-          <div className="grid-2" style={{ gap: '48px', alignItems: 'center', position: 'relative', zIndex: 2 }}>
+          <div className="grid-2" style={{ gap: '48px', alignItems: 'center', position: 'relative', zIndex: 2, width: '100%' }}>
             
             {/* Left Column: Typography & Buttons */}
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%' }}>
               
 
-
               <h1
-                className="font-serif"
+                className="font-serif hero-title"
                 style={{
-                  fontSize: 'clamp(2.8rem, 5.5vw, 4.5rem)',
+                  fontSize: 'clamp(2.5rem, 6.5vw, 4.5rem)',
                   fontWeight: 800,
                   color: 'var(--text-dark)',
-                  lineHeight: 1.05,
+                  lineHeight: 1.08,
                   letterSpacing: '-0.03em',
+                  wordBreak: 'break-word',
                 }}
               >
                 Soy Barby
               </h1>
 
               <p
-                className="font-serif"
+                className="font-serif hero-subtitle"
                 style={{
-                  fontSize: 'clamp(1.15rem, 2vw, 1.4rem)',
+                  fontSize: 'clamp(1.1rem, 2.5vw, 1.4rem)',
                   fontStyle: 'italic',
                   color: 'var(--text-dark)',
                   fontWeight: 500,
-                  lineHeight: 1.5,
+                  lineHeight: 1.45,
                   marginTop: '4px',
                 }}
               >
@@ -89,9 +92,10 @@ export default function Hero({
 
               {/* Action Buttons: Ambos del mismo tamaño y en color claro */}
               <div
+                className="hero-actions"
                 style={{
                   display: 'grid',
-                  gridTemplateColumns: 'repeat(auto-fit, minmax(230px, 1fr))',
+                  gridTemplateColumns: 'repeat(auto-fit, minmax(210px, 1fr))',
                   gap: '16px',
                   marginTop: '24px',
                   width: '100%',
@@ -222,8 +226,14 @@ export default function Hero({
       <style jsx>{`
         @media (max-width: 850px) {
           .hero-container {
-            padding: 36px 24px !important;
-            border-radius: 32px !important;
+            padding: 32px 20px !important;
+            border-radius: 28px !important;
+          }
+        }
+        @media (max-width: 600px) {
+          .hero-container {
+            padding: 24px 14px !important;
+            border-radius: 24px !important;
           }
         }
       `}</style>

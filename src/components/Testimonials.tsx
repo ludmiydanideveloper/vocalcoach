@@ -35,7 +35,7 @@ export default function Testimonials() {
           </p>
         </div>
 
-        <div className="grid-3">
+        <div className="grid-3 mobile-carousel">
           {reviews.map((rev, idx) => (
             <div
               key={idx}
