@@ -66,7 +66,7 @@ export default function BookingModal({
       }}
     >
       <div
-        className="glass-card"
+        className="glass-card booking-modal-card"
         style={{
           backgroundColor: '#FFFFFF',
           borderRadius: 'var(--radius-lg)',

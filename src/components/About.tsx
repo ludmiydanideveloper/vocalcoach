@@ -84,7 +84,7 @@ export default function About() {
           <div style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
             
             <div
-              className="glass-card"
+              className="glass-card about-card"
               style={{
                 backgroundColor: '#FAF5FF',
                 border: '2px solid var(--accent-light)',

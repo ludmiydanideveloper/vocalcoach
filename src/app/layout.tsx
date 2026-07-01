@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import WhatsAppFloating from '@/components/WhatsAppFloating';
 
 export const metadata: Metadata = {
   title: 'Barby | Entre Canciones - Vocal Coach & Artista (Clases Presenciales y Online)',
@@ -14,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body>{children}</body>
+      <body>
+        {children}
+        <WhatsAppFloating />
+      </body>
     </html>
   );
 }

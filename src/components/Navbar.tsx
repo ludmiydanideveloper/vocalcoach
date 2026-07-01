@@ -42,6 +42,7 @@ export default function Navbar({ onOpenBooking }: { onOpenBooking: () => void })
         <a href="#inicio" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
           <img
             src="/entrecanciones.jpg"
+            className="navbar-logo"
             onError={(e) => {
               e.currentTarget.src = '/logo.jpg';
               e.currentTarget.onerror = () => {

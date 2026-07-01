@@ -65,7 +65,7 @@ export default function VocalRecommender({ onOpenBooking }: { onOpenBooking: (pr
             </div>
 
             {/* Collage de fotos de instrumentos y cantantes */}
-            <div style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '16px', marginTop: '12px' }}>
+            <div className="collage-grid" style={{ display: 'grid', gridTemplateColumns: '1.1fr 0.9fr', gap: '16px', marginTop: '12px' }}>
               
               {/* Foto 1: Cantante apasionada en estudio */}
               <div
@@ -140,7 +140,7 @@ export default function VocalRecommender({ onOpenBooking }: { onOpenBooking: (pr
           {/* Columna Derecha: El Simulador a un costado */}
           <div style={{ width: '100%' }}>
             <div
-              className="glass-card"
+              className="glass-card simulator-card"
               style={{
                 width: '100%',
                 padding: '38px',

@@ -19,7 +19,7 @@ export default function LeadMagnet() {
       <div className="container">
         
         <div
-          className="glass-card"
+          className="glass-card leadmagnet-card"
           style={{
             backgroundColor: '#FFFFFF',
             borderRadius: 'var(--radius-lg)',
